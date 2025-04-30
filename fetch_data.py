@@ -3,8 +3,8 @@ import yfinance as yf
 import pandas as pd
 import time
 
-#tickers = ['APO', 'HESAY', 'RHI', 'BBY', 'PM', 'HIMS', 'WM', 'LYV', 'UONE']
-tickers = ['APO', 'RHI', 'BBY', 'PM', 'HIMS', 'WM', 'LYV', 'UONE']
+#tickers = ['APO',  'RHI', 'BBY', 'PM', 'HIMS', 'WM', 'LYV', 'UONE']
+tickers = ['APO', 'HESAY', 'RHI', 'BBY', 'PM', 'HIMS', 'WM', 'LYV', 'UONE']
 for ticker in tickers:
     df = yf.download(
         tickers=ticker,

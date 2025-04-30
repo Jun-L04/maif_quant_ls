@@ -10,7 +10,7 @@ for ticker in tickers:
         tickers=ticker,
         start='2005-01-01',
         end='2025-04-18',
-        interval='1mo',
+        interval='1wk',
         auto_adjust=True,
         progress=False, 
         threads=False 
@@ -21,7 +21,10 @@ for ticker in tickers:
     df.reset_index(inplace=True)  # Date becomes a column
 
     df.to_excel(f'{ticker}.xlsx', index=False)
-    time.sleep(2)
+    time.sleep(1)
+    
+print("Fetching data complete.")
+
 
 
 
